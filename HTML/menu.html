@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial,sans-serif;
+            scroll-behavior: smooth;
+        }
+       
+        .navabar{
+            position: fixed;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000 ;
+        }
+        .navabar a{
+               color: white;
+               margin: 0 15px;
+               text-decoration: none;
+               font-size: 18px;
+               padding: 10px 15px;
+        }
+        .navabar a:hover{
+            background-color: #28a745;
+        }
+        section{
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-iteam{
+            max-width: 800px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .price{
+            float: right;
+            color: #28a745;
+            font-weight: bold;
+        }
+        #starters
+        {background-color: #ffe8d6;}
+        #main-course
+        {background-color: #fcefb4;}
+        #desserts
+        {background-color: #fde2e4;}
+        #beverages
+        {background-color: #e0f7fa;}
+        .offer{
+            background-color: #ffcccb;
+            display: inline;
+            padding: 10px;
+            font-weight: bold;
+            color: #b30000;
+            
+        }
+       img{
+        width: 220px;
+        height: 220px;
+        border-color: black;
+        border: 5px;
+        border-style: solid;
+        display: inline;
+       }
+      
+      header{
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1PX solid#ffd700;
+      }
+      header h1{
+        color: white;
+        font-size: 36px;
+        margin: 0;
+      }
+      .thank{
+        border: 0;
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+     <a href=" #starters"></a>
+     <a href="#main-course">Main Course</a>
+     <a href="#desserts">Desserts</a>
+     <a href="#beverages">Beverages</a>
+     <a href="#offers">special offers</a>
+    </div>
+  <header>
+    <h1>WELCOME TO MY RESTAURENT</h1>
+  </header> 
+    <section id="starters">
+        <h2>Starters</h2>
+        <div class="menu-item">
+            <strong>Veg Spring Rolls</strong>
+            <span class="price">₹150</span>
+            <p>Crispy rolls stuffed with veggies,served with spicy sauce.</p>
+            <img src="veg roll.jpg">
+        </div>
+        <div class="menu-item">
+            <strong>Chicken lollipop</strong>
+            <span class="price">₹250</span>
+            <p>Spicy and Crispy Chicken wings marinated with herbs.</p>
+            <img src="chiken.jpg" style="right: 100p%;">
+         <div class="menu-item">
+           <strong>Panner Tikka</strong>
+            <span class="price">₹180</span>
+           <p>Juicy cubes of Cottage cheese mainated in a tangy and spiced yogurt mixture grilled to perfection.</p>
+           <img src="paneer tikka.avif">
+         </div>
+    </section>
+    <hr>
+    <hr>
+    <section id="main-course">
+        <h2>Main Course</h2>
+        <div class="menu-item">
+            <strong>Pannir Butter Masala</strong>
+            <span class="price">₹300</span>
+            <p>Cottage cheese in a rich, creamy tomato-bassed gravy.</p>
+            <img src="panner butter masala.webp">
+        </div>
+        <div class="menu-item">
+            <strong>Chicken Briyani</strong>
+            <span class="price">₹350</span>
+            <p>Aromatic rice cooked with Chicken and flavorful spices.</p>
+            <img src="chicken briyani.jpg">
+        </div>
+        <div class="menu-item">
+            <strong>Mutton Rogan Josh</strong>
+            <span class="price">₹400</span>
+           <p>A signature kashmiri delight, this slow-cooked carry boosts succulent pieces mutton immersed </p>
+           <img src="mutton.jpg">   
+        </div>
+    </section>
+    <hr>
+    <hr>
+    <section id="desserts">
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <strong>Gulab Jamun</strong>
+            <span class="price">₹100</span>
+            <p>Soft and spongy milk balls soaked in sugar syrup.</p>
+            <img src="gulab-jamun.webp">
+        </div>
+        <div class="menu-item">
+            <strong>Chocolate Lava Cake</strong>
+            <span class="price">₹180</span>
+            <p>Warm chocolate cake with a gooey chocolate center.</p>
+            <img src="cake.jpg">
+        </div>
+    </section>
+<hr>
+<hr>
+    <section id="beverages">
+        <h2>Beverages</h2>
+        <div class="menu-item">
+            <strong>Fresh Lime Soda</strong>
+            <span class="price">₹80</span>
+            <p>Refreshing lime soda with a perfect balance of sweet and sait.</p>
+            <img src="lemon.webp">
+        </div>
+        <div class="menu-item">
+            <strong>Mango Smoothie</strong>
+            <span class="price">₹120</span>
+            <p>Creamy mango smoothie made with fresh mango .</p>
+            <img src="mango.jpg">
+        </div>
+    </section>
+<hr>
+<hr>
+    <section id="offers">
+        <h2>Special Offers</h2>
+        <div class="offers">
+            Get 10% OFF on orders above ₹1000!(only on weekdays)
+        </div>
+        <div class="offers">
+            Free Dessert with any Mani Coures on Sunday!
+            <img src="offer.webp">
+        </div>
+    </section>
+</body>
+<hr>
+<hr>
+<center>
+<a href="feedback.html">Feedback</a>
+</center>
+<center>
+<footer>Thank You Come Again</footer>
+<img class="thank"src="thank you.jpg">
+</center>
+</html>

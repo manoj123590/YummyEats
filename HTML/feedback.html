@@ -1,0 +1,67 @@
+<style>
+    body{
+        background-color: #F5F5DC;
+    }
+    form{
+        width: 50%;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #FFD700;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    input,textarea{
+        width: 100%;
+        padding: 10%;
+        margin-bottom: 20px;
+        border: 1px solid#CCC;
+    }
+    input[type="submit"]{
+        background-color: darkgreen;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    p{
+        text-align: center;
+        font-size: 18px;
+        color: #666;
+    }
+    .feedback{
+        background-color: darkgreen;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .feedback-hover{
+        background-color: green;
+    }
+</style>
+<h1>Feedback</h1>
+<form>
+    <label>Name:</label>
+    <input type="text"><br><br>
+    <label>Rating:</label>
+    <input type="radio"name="rating" value="5">5
+    <label>Rating:</label>
+    <input type="radio"name="rating" value="4">4
+    <label>Rating:</label>
+    <input type="radio"name="rating" value="3">3
+    <label>Rating:</label>
+    <input type="radio"name="rating" value="2">2
+    <label>Rating:</label>
+    <input type="radio"name="rating" value="1">1<br><br>
+    <label>Comment:</label>
+    <textarea></textarea><br><br>
+     <center>
+     <a href="index.html"class="feedback">Submit</a>
+     </center>
+<p>Thank You For Your Feedback</p>
